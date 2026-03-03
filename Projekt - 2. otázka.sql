@@ -23,5 +23,5 @@ GROUP BY
 	nazev_zbozi,
 	roky
 ORDER BY
-	roky
+	nazev_zbozi
 ;
