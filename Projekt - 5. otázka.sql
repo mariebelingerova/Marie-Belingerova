@@ -1,4 +1,4 @@
--- 5.	Má výška HDP vliv na změny ve mzdách a cenách potravin? Neboli, pokud HDP 
+-- 5. Má výška HDP vliv na změny ve mzdách a cenách potravin? Neboli, pokud HDP 
 -- vzroste výrazněji v jednom roce, projeví se to na cenách potravin či mzdách ve 
 -- stejném nebo následujícím roce výraznějším růstem?
 
@@ -82,4 +82,5 @@ FROM v_marie_belingerova_hdp h
 JOIN v_marie_belingerova_mzdy m ON h.rok = m.rok
 JOIN v_marie_belingerova_ceny c ON h.rok = c.rok
 WHERE h.nasledujici_rok IS NOT null
+
 ;
