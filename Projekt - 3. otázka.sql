@@ -1,4 +1,4 @@
--- 3.	Která kategorie potravin zdražuje nejpomaleji (je u ní nejnižší percentuální meziroční nárůst)?
+-- 3. Která kategorie potravin zdražuje nejpomaleji (je u ní nejnižší percentuální meziroční nárůst)?
 
 CREATE OR REPLACE VIEW v_marie_belingerova_zdrazovani_potravin AS 
 SELECT
@@ -32,4 +32,5 @@ GROUP BY
 	nazev_zbozi
 ORDER BY
 	procentualni_narust
+
 ;
