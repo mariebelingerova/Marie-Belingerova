@@ -1,4 +1,4 @@
--- 4.	Existuje rok, ve kterém byl meziroční nárůst cen potravin výrazně vyšší než růst mezd (větší než 10 %)?
+-- 4. Existuje rok, ve kterém byl meziroční nárůst cen potravin výrazně vyšší než růst mezd (větší než 10 %)?
 
 CREATE OR REPLACE VIEW v_marie_belingerova_rust_potravin AS 
 SELECT
@@ -50,4 +50,5 @@ FROM v_marie_belingerova_rust_potravin p
 JOIN v_marie_belingerova_rust_mezd m ON p.rok = m.rok
 WHERE p.nasledujici_rok IS NOT null
 ORDER BY
+
 	p.rok;
