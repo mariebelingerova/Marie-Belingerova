@@ -3,23 +3,20 @@
 SELECT *
 FROM czechia_payroll;
 
-SELECT *
-FROM czechia_payroll
-ORDER BY payroll_year;
-
-SELECT *
-FROM czechia_payroll
-ORDER BY payroll_year desc;
+SELECT
+    MIN(payroll_year) AS nejnizsi_rok,
+    MAX(payroll_year) AS nejvyssi_rok
+FROM czechia_payroll;
 
 -- roky jsou mezi 2000 a 2021
 
 SELECT *
-FROM czechia_price
-ORDER BY date_from;
+FROM czechia_price;
 
-SELECT *
-FROM czechia_price
-ORDER BY date_from desc;
+SELECT
+    MIN(date_from) AS nejnizsi_rok,
+    MAX(date_from) AS nejvyssi_rok
+FROM czechia_price;
 
 -- roky jsou mezi 2006 a 2018
 
@@ -76,3 +73,4 @@ ORDER BY
 
 SELECT *
 FROM t_marie_belingerova_project_SQL_secondary_final;
+
